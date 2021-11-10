@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### `configs`
+
+The current config is in ./configs/pages
+
 ## Available Scripts
 
 In the project directory, you can run:

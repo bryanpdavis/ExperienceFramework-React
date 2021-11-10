@@ -15,7 +15,7 @@ export default ExperienceBase => {
   if (typeof Components[ExperienceBase.component] !== "undefined") {
     return React.createElement(Components[ExperienceBase.component], {
       key: ExperienceBase.id,
-      component: ExperienceBase
+      props: ExperienceBase
     });
   }
   // component doesn't exist yet

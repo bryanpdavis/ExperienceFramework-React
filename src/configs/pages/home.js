@@ -4,7 +4,12 @@ const data = {
       {
         id: "gJZoSLkfZV",
         component: "button",
-        title: "Bar"
+        title: "Bar",
+        style: { 
+          backgroundColor: "#A0A0A0",
+          color: "Yellow"
+        },
+        variant: "contained"
       },
       {
         id: "gJasdfasdf",

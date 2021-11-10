@@ -1,12 +1,10 @@
 import React, { useContext } from 'react'
 
-export default class ExperienceBaseContainer extends ExperienceBase {
-    render() {
+const ExperienceBaseContainer = (config) => {
         return (
-            <div></div>
+            <div>{config.props.title}</div>
         )
-    }
 }
 
-export default ExperienceBaseContainer
+export default ExperienceBaseContainer;
 

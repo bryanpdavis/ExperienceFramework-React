@@ -1,9 +1,11 @@
-import React, { useContext } from 'react'
+import { Button as _Button } from '@mui/material'
 
-export default props => (
-  <div className="button">
-    <hr />
-    Hi I'm a button component with the title:
-    <h2>{props.component.title}</h2>
-  </div>
-);
+const Button = (config) => {
+  return (
+    <div>
+    <_Button style={config.props.style} variant={config.props.variant ? config.props.variant : "contained"}>{config.props.title}</_Button>
+    </div>
+  )
+};
+
+export default Button;
