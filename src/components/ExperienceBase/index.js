@@ -2,9 +2,12 @@ import React from 'react'
 import Checkbox from '../Checkbox';
 import Button from '../Button';
 import Input from '../Input';
+<<<<<<< Updated upstream
 import VideoPlayer from '../VideoPlayer';
+=======
 import MenuItem from '../MenuItem';
 import Select from '../Select';
+>>>>>>> Stashed changes
 
 export const Components = {
     button: Button,
@@ -12,8 +15,10 @@ export const Components = {
     input: Input,
 <<<<<<< Updated upstream
     videoplayer: VideoPlayer
+=======
     menuitem: MenuItem,
     select: Select
+>>>>>>> Stashed changes
   };
 
 export default ExperienceBase => {
