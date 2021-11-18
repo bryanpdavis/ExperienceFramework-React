@@ -3,12 +3,17 @@ import Checkbox from '../Checkbox';
 import Button from '../Button';
 import Input from '../Input';
 import VideoPlayer from '../VideoPlayer';
+import MenuItem from '../MenuItem';
+import Select from '../Select';
 
 export const Components = {
     button: Button,
     checkbox: Checkbox,
     input: Input,
+<<<<<<< Updated upstream
     videoplayer: VideoPlayer
+    menuitem: MenuItem,
+    select: Select
   };
 
 export default ExperienceBase => {
