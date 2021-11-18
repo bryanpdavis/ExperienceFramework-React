@@ -17,7 +17,6 @@ const data = {
       {
         id: "gJasdfasdf",
         component: "checkbox",
-<<<<<<< Updated upstream
         title: "Checkbox Label"
       },
       {
@@ -37,35 +36,6 @@ const data = {
             autoplay: 0
           }
         }
-=======
-        title: "Bar2",
-        disabled: false
-      },
-      {
-        id: "gJasdasdfasdf",
-        component: "select",
-        title: "Test",
-        label: "test",
-        items: [
-          {
-            label: "Which Test?",
-            value: "none",
-            disabled: true
-          },
-          {
-            label: "test1",
-            value: "test1"
-          },
-          {
-            label: "test2",
-            value: "test3"
-          },
-          {
-            label: "test3",
-            value: "test3"
-          }
-        ]
->>>>>>> Stashed changes
       }
     ]
   }
