@@ -1,11 +1,9 @@
-import React, { useContext } from 'react'
+import { FormGroup, FormControlLabel, Checkbox as _Checkbox } from '@mui/material';
 
 const Checkbox = (config) => (
-  <div className="checkbox">
-    <hr />
-    Hi I'm a checkbox component with the title:
-    <h2>{config.props.title}</h2>
-  </div>
+  <FormGroup>
+    <FormControlLabel control={<_Checkbox style={config.props.style} />} label={config.props.title} />
+  </FormGroup>
 );
 
 export default Checkbox;

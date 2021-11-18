@@ -2,11 +2,13 @@ import React from 'react'
 import Checkbox from '../Checkbox';
 import Button from '../Button';
 import Input from '../Input';
+import VideoPlayer from '../VideoPlayer';
 
 export const Components = {
     button: Button,
     checkbox: Checkbox,
-    input: Input
+    input: Input,
+    videoplayer: VideoPlayer
   };
 
 export default ExperienceBase => {

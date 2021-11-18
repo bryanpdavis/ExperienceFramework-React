@@ -1,11 +1,7 @@
-import React, { useContext } from 'react'
+import { TextField } from "@mui/material";
 
 const Input = (config) => (
-  <div className="input">
-    <hr />
-    Hi I'm a input component with the title:
-    <h2>{config.props.title}</h2>
-  </div>
+  <TextField variant={config.props.variant ? config.props.variant : "outlined"} label={config.props.title} />
 );
 
 export default Input;

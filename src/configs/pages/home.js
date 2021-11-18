@@ -4,7 +4,7 @@ const data = {
       {
         id: "gJZoSLkfZV",
         component: "button",
-        title: "Bar",
+        title: "Button Label",
         style: { 
           backgroundColor: "#A0A0A0",
           color: "Yellow"
@@ -14,12 +14,25 @@ const data = {
       {
         id: "gJasdfasdf",
         component: "checkbox",
-        title: "Bar2"
+        title: "Checkbox Label"
       },
       {
         id: "gJasdasdfasdf",
         component: "input",
-        title: "Bar3"
+        title: "Input Label"
+      },
+      {
+        id: "jsklfjsklfjklsdj",
+        component: "videoplayer",
+        title: "Video Player",
+        videoid: "e44mkrv77Dg",
+        opts: {
+          height: '390',
+          width: '640',
+          playerVars: {
+            autoplay: 0
+          }
+        }
       }
     ]
   }
