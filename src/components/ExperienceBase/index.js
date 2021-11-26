@@ -1,28 +1,18 @@
-import React from 'react'
-import Checkbox from '../Checkbox';
-import Button from '../Button';
-import Input from '../Input';
-import VideoPlayer from '../VideoPlayer';
+import React, { FunctionComponent, ReactNode } from 'react'
+import Components from '../Components';
 
-export const Components = {
-    button: Button,
-    checkbox: Checkbox,
-    input: Input,
-    videoplayer: VideoPlayer
-  };
 
-export default ExperienceBase => {
-
-    // component does exist
-  if (typeof Components[ExperienceBase.component] !== "undefined") {
-    return React.createElement(Components[ExperienceBase.component], {
-      key: ExperienceBase.id,
-      props: ExperienceBase
-    });
-  }
-  // component doesn't exist yet
-  return React.createElement(
-    () => <div>The component {ExperienceBase.component} has not been created yet.</div>,
-    { key: ExperienceBase.id }
-  );
+function renderTree(props) {
+  const pType = (props.type !== undefined ? props.type.toLowerCase() : props.tag)
+  return React.createElement(Components[pType] !== undefined ? Components[pType] : Components['html'], props, props.children.map(child => {
+    const cType = (child.type !== undefined ? child.type.toLowerCase() : child.tag)
+    return React.createElement(Components[cType] !== undefined ? Components[cType] : Components['html'], child, 
+      child.children !== undefined ? renderTree(child.children) : null)
+  }))
 }
+
+const ExperienceBase = (props) => {
+  return renderTree(props)
+}
+
+export default ExperienceBase;
