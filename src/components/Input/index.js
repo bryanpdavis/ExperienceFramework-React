@@ -1,7 +1,7 @@
 import { TextField } from "@mui/material";
 
-const Input = (config) => (
-  <TextField variant={config.props.variant ? config.props.variant : "outlined"} label={config.props.title} />
+const Input = (props) => (
+  <TextField variant={props.variant ? props.variant : "outlined"} label={props.title} />
 );
 
 export default Input;
